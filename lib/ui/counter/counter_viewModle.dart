@@ -5,7 +5,6 @@ import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 class CounterViewModel extends BaseViewModel {
-
   final navigationService = locator<NavigationService>();
   final counterService = locator<CounterServices>();
 
@@ -14,7 +13,16 @@ class CounterViewModel extends BaseViewModel {
     rebuildUi();
   }
 
+  subValue() {
+    counterService.subsCounterValue();
+    rebuildUi();
+  }
+
   navigateToHome() {
     navigationService.navigateTo(Routes.homeView);
+  }
+
+  navigateToCounter() {
+    navigationService.navigateTo(Routes.counterView);
   }
 }

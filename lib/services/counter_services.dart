@@ -6,4 +6,9 @@ class CounterServices{
 
    print(counterValue);
  }
+ subsCounterValue(){
+   counterValue--;
+
+   print(counterValue);
+ }
 }
