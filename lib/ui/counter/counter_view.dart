@@ -7,7 +7,7 @@ class CounterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ViewModelBuilder.nonReactive(
+    return ViewModelBuilder.reactive(
         viewModelBuilder: () => CounterViewModel(),
         builder: (context, viewModle, child) {
           return SafeArea(
@@ -16,11 +16,17 @@ class CounterView extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                const Text("Counter Value"),
+                Text(viewModle.counterService.counterValue.toString()),
                 ElevatedButton(
-                    onPressed: () {}, child: const Text("Add value")),
+                    onPressed: () {
+                      viewModle.addValue();
+                    },
+                    child: const Text("Add value")),
                 ElevatedButton(
-                    onPressed: () {}, child: const Text("Go to Home page "))
+                    onPressed: () {
+                      viewModle.navigateToHome();
+                    },
+                    child: const Text("Go to Home page "))
               ],
             ),
           )));

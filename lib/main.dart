@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutterstacked/app/app.locator.dart';
 import 'package:flutterstacked/app/app.router.dart';
 import 'package:flutterstacked/ui/counter/counter_view.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
-void main() {
+void main() async {
+  await setupLocator();
   runApp(const MyApp());
 }
 

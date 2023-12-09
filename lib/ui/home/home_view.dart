@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterstacked/app/app.router.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -7,6 +8,8 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: ElevatedButton(
-            onPressed: () {}, child: const Text('Go Counter Page')));
+            onPressed: () {
+            },
+            child: const Text('Go Counter Page')));
   }
 }
