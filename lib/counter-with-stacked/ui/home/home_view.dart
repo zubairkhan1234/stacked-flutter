@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterstacked/app/app.router.dart';
-import 'package:flutterstacked/ui/counter/counter_viewModle.dart';
+import 'package:flutterstacked/counter-with-stacked/app/app.router.dart';
+import 'package:flutterstacked/counter-with-stacked/ui/counter/counter_viewModle.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeView extends StatelessWidget {

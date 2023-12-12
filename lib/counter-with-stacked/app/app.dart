@@ -1,6 +1,6 @@
-import 'package:flutterstacked/services/counter_services.dart';
-import 'package:flutterstacked/ui/counter/counter_view.dart';
-import 'package:flutterstacked/ui/home/home_view.dart';
+import 'package:flutterstacked/counter-with-stacked/services/counter_services.dart';
+import 'package:flutterstacked/counter-with-stacked/ui/counter/counter_view.dart';
+import 'package:flutterstacked/counter-with-stacked/ui/home/home_view.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
